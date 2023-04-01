@@ -26,7 +26,8 @@ public class RunnerSave10 {
 //        session.save(student);
         session.save(student2);
         // ilk 10 id cache'de hazir
-        // oturum kapanip acilirsa daha once cache'e alinmis id'ler cop olur (cache 1010'da kaldiysa 1011den devam eder)
+        // oturum kapanip acilirsa daha once cache'e alinmis id'ler cop olur
+        // (cache 1010'da kaldiysa 1011den devam eder)
 
 
         tx.commit();

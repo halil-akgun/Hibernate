@@ -21,6 +21,7 @@ public class Student10 {
             sequenceName = "std_seq", // db'de olusacak isim
             initialValue = 1800, // id 1800'den baslasin
             allocationSize = 10 // siradaki ilk 10 id cache'de hazir bekletiliyor
+                                // session kapatilip acilirsa 11-20 arasini cache'e alir ve kullanir (ilk 10 bitmese de)
     )
     @Id
     private int id;

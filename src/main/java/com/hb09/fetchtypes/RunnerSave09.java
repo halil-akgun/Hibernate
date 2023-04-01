@@ -5,6 +5,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import java.io.Serializable;
+
 public class RunnerSave09 {
     public static void main(String[] args) {
 
@@ -69,6 +71,9 @@ public class RunnerSave09 {
         session.save(student2);
         session.save(student3);
 
+
+//        Serializable s = session.save(student3); // commitin altinda calisir - id geri donduruyor
+//        session.persist();  commitin altinda calismaz
 
         tx.commit();
         session.close();
